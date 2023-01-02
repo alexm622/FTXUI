@@ -1768,8 +1768,8 @@ std::vector<std::string> Utf8ToGlyphs(const std::string& input) {
 }
 
 int GlyphPosition(const std::string& input, size_t glyph_index, size_t start) {
-  if (glyph_index <= 0) {
-    return 0;
+  if (glyph_index == 0) {
+    return start;
   }
   size_t end = 0;
   while (start < input.size()) {

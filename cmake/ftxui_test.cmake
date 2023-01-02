@@ -39,6 +39,7 @@ add_executable(tests
   src/ftxui/component/screen_interactive_test.cpp
   src/ftxui/component/slider_test.cpp
   src/ftxui/component/terminal_input_parser_test.cpp
+  src/ftxui/component/text_area_test.cpp
   src/ftxui/component/toggle_test.cpp
   src/ftxui/dom/blink_test.cpp
   src/ftxui/dom/bold_test.cpp

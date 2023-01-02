@@ -55,6 +55,8 @@ Component Input(StringRef content,
                 ConstStringRef placeholder,
                 Ref<InputOption> option = {});
 
+Component TextArea(StringRef content, Ref<TextAreaOption> option = {});
+
 Component Menu(ConstStringListRef entries,
                int* selected_,
                Ref<MenuOption> = MenuOption::Vertical());

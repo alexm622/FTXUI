@@ -149,6 +149,21 @@ struct InputOption {
   Ref<int> cursor_position = -1;
 };
 
+/// @brief Option for the Input component.
+/// @ingroup component
+struct TextAreaOption {
+  StringRef placeholder = "";
+
+  /// Called when the content changes.
+  std::function<void()> on_change = [] {};
+  /// Called when the user presses enter.
+  std::function<void()> on_enter = [] {};
+
+  // The position of the cursor:
+  Ref<int> cursor_line = 0;
+  Ref<int> cursor_column = 0;
+};
+
 /// @brief Option for the Radiobox component.
 /// @ingroup component
 struct RadioboxOption {
